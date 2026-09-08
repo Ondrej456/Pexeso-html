@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexeso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-index">
+        <h1>Vítej ve hře pexeso  <a href="mailto: v.incent@seznam.cz"><img id="logo" src="/Images/logo.svg" alt=""></a></h1>  
+        <label for="pocet">Zadej počet karet 10 - 30</label>
+        <div class="pocetJmena">
+            <div class="jmena">
+                <input class="jmeno" type="text" placeholder="Hráč1" id="hracJedna">
+                <input class="jmeno" type="text" placeholder="Hráč2" id="hracDva">
+            </div>
+            
+            <input  type="number" min="12" max="30" step="6" value="12" class="input-pocet" id="pocet">
+        </div>
+
+        <h1>Vyber motiv</h1>
+        <div class="motiv">
+
+            <label class="image-option">
+                <input type="radio" name="vyber" value="zvirata.png" hidden>
+                <img src="zvirata.png" alt="zvirata">
+            </label>
+            <label  class="image-option">
+                <input type="radio" name="vyber" value="auta.png"  hidden>
+                <img style="background-color: white;" src="auta.png" alt="auta">
+            </label>
+            <button onclick="pexeso()">Potvrdit</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
